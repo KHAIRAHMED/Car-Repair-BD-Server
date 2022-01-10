@@ -22,7 +22,7 @@ app.use(cors())
 // app.use(bodyParser.json())
 app.use(fileUpload())
 // app.use(express.limit(100000000))
-const port = 5000 || process.env.PORT
+const port = process.env.PORT||5000 
 app.use(bodyParser.json({limit: '50mb'}));
 app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
 
